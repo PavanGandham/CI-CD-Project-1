@@ -31,7 +31,7 @@ pipeline {
             
         stage ('Deploy') {
             steps{
-            deploy adapters: [tomcat9(credentialsId: '88488dca-c16a-4bbb-8a95-abb46f153b57', path: '', url: 'http://ec2-44-202-15-56.compute-1.amazonaws.com:8080')], contextPath: 'jenkins_calci', war: '**/*.war'
+            deploy adapters: [tomcat9(credentialsId: '88488dca-c16a-4bbb-8a95-abb46f153b57', path: '', url: 'http://ec2-54-211-192-201.compute-1.amazonaws.com:8081')], contextPath: 'jenkins_calci', war: '**/*.war'
             echo "Deploy successful";
             }
         }
