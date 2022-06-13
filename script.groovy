@@ -3,7 +3,7 @@ pipeline {
     stages {  
             stage ('Git-Checkout') {  
                 steps{
-                    url: 'https://github.com/PavanGandham/CI-CD-Project-1.git'
+                    git 'https://github.com/PavanGandham/CI-CD-Project-1.git'
                     echo "Checkout successful";
                 } 
             }
